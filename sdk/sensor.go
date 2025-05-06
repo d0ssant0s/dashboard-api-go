@@ -1020,7 +1020,7 @@ func (s *SensorService) GetDeviceSensorCommands(serial string, getDeviceSensorCo
 
 	if getDeviceSensorCommandsQueryParams != nil && getDeviceSensorCommandsQueryParams.PerPage == -1 {
 		var result *ResponseSensorGetDeviceSensorCommands
-		println("Paginate")
+		
 		result2, response, err := Paginate(s.GetDeviceSensorCommandsPaginate, serial, "", &GetDeviceSensorCommandsQueryParams{
 			PerPage: PAGINATION_PER_PAGE,
 		})
@@ -1408,7 +1408,7 @@ func (s *SensorService) GetOrganizationSensorReadingsHistory(organizationID stri
 
 	if getOrganizationSensorReadingsHistoryQueryParams != nil && getOrganizationSensorReadingsHistoryQueryParams.PerPage == -1 {
 		var result *ResponseSensorGetOrganizationSensorReadingsHistory
-		println("Paginate")
+		
 		result2, response, err := Paginate(s.GetOrganizationSensorReadingsHistoryPaginate, organizationID, "", &GetOrganizationSensorReadingsHistoryQueryParams{
 			PerPage: PAGINATION_PER_PAGE,
 		})
@@ -1481,7 +1481,7 @@ func (s *SensorService) GetOrganizationSensorReadingsLatest(organizationID strin
 
 	if getOrganizationSensorReadingsLatestQueryParams != nil && getOrganizationSensorReadingsLatestQueryParams.PerPage == -1 {
 		var result *ResponseSensorGetOrganizationSensorReadingsLatest
-		println("Paginate")
+		
 		result2, response, err := Paginate(s.GetOrganizationSensorReadingsLatestPaginate, organizationID, "", &GetOrganizationSensorReadingsLatestQueryParams{
 			PerPage: PAGINATION_PER_PAGE,
 		})

@@ -385,7 +385,7 @@ func (s *LicensingService) GetAdministeredLicensingSubscriptionSubscriptions(get
 
 	if getAdministeredLicensingSubscriptionSubscriptionsQueryParams != nil && getAdministeredLicensingSubscriptionSubscriptionsQueryParams.PerPage == -1 {
 		var result *ResponseLicensingGetAdministeredLicensingSubscriptionSubscriptions
-		println("Paginate")
+		
 		getAdministeredLicensingSubscriptionSubscriptionsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetAdministeredLicensingSubscriptionSubscriptionsPaginate, "", "", getAdministeredLicensingSubscriptionSubscriptionsQueryParams)
 		if err != nil {
@@ -491,7 +491,7 @@ func (s *LicensingService) GetOrganizationLicensingCotermLicenses(organizationID
 
 	if getOrganizationLicensingCotermLicensesQueryParams != nil && getOrganizationLicensingCotermLicensesQueryParams.PerPage == -1 {
 		var result *ResponseLicensingGetOrganizationLicensingCotermLicenses
-		println("Paginate")
+		
 		getOrganizationLicensingCotermLicensesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationLicensingCotermLicensesPaginate, organizationID, "", getOrganizationLicensingCotermLicensesQueryParams)
 		if err != nil {

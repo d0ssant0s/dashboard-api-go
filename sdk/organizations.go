@@ -3891,7 +3891,7 @@ func (s *OrganizationsService) GetOrganizations(getOrganizationsQueryParams *Get
 
 	if getOrganizationsQueryParams != nil && getOrganizationsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizations
-		println("Paginate")
+		
 		getOrganizationsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationsPaginate, "", "", getOrganizationsQueryParams)
 		if err != nil {
@@ -4418,7 +4418,7 @@ func (s *OrganizationsService) GetOrganizationAPIRequests(organizationID string,
 
 	if getOrganizationApiRequestsQueryParams != nil && getOrganizationApiRequestsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationAPIRequests
-		println("Paginate")
+		
 		getOrganizationApiRequestsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationAPIRequestsPaginate, organizationID, "", getOrganizationApiRequestsQueryParams)
 		if err != nil {
@@ -4564,7 +4564,7 @@ func (s *OrganizationsService) GetOrganizationAssuranceAlerts(organizationID str
 
 	if getOrganizationAssuranceAlertsQueryParams != nil && getOrganizationAssuranceAlertsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationAssuranceAlerts
-		println("Paginate")
+		
 		getOrganizationAssuranceAlertsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationAssuranceAlertsPaginate, organizationID, "", getOrganizationAssuranceAlertsQueryParams)
 		if err != nil {
@@ -4673,7 +4673,7 @@ func (s *OrganizationsService) GetOrganizationAssuranceAlertsOverviewByNetwork(o
 
 	if getOrganizationAssuranceAlertsOverviewByNetworkQueryParams != nil && getOrganizationAssuranceAlertsOverviewByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationAssuranceAlertsOverviewByNetwork
-		println("Paginate")
+		
 		getOrganizationAssuranceAlertsOverviewByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationAssuranceAlertsOverviewByNetworkPaginate, organizationID, "", getOrganizationAssuranceAlertsOverviewByNetworkQueryParams)
 		if err != nil {
@@ -4745,7 +4745,7 @@ func (s *OrganizationsService) GetOrganizationAssuranceAlertsOverviewByType(orga
 
 	if getOrganizationAssuranceAlertsOverviewByTypeQueryParams != nil && getOrganizationAssuranceAlertsOverviewByTypeQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationAssuranceAlertsOverviewByType
-		println("Paginate")
+		
 		getOrganizationAssuranceAlertsOverviewByTypeQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationAssuranceAlertsOverviewByTypePaginate, organizationID, "", getOrganizationAssuranceAlertsOverviewByTypeQueryParams)
 		if err != nil {
@@ -5068,7 +5068,7 @@ func (s *OrganizationsService) GetOrganizationClientsSearch(organizationID strin
 
 	if getOrganizationClientsSearchQueryParams != nil && getOrganizationClientsSearchQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationClientsSearch
-		println("Paginate")
+		
 		getOrganizationClientsSearchQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationClientsSearchPaginate, organizationID, "", getOrganizationClientsSearchQueryParams)
 		if err != nil {
@@ -5210,7 +5210,7 @@ func (s *OrganizationsService) GetOrganizationConfigurationChanges(organizationI
 
 	if getOrganizationConfigurationChangesQueryParams != nil && getOrganizationConfigurationChangesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationConfigurationChanges
-		println("Paginate")
+		
 		getOrganizationConfigurationChangesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationConfigurationChangesPaginate, organizationID, "", getOrganizationConfigurationChangesQueryParams)
 		if err != nil {
@@ -5282,7 +5282,7 @@ func (s *OrganizationsService) GetOrganizationDevices(organizationID string, get
 
 	if getOrganizationDevicesQueryParams != nil && getOrganizationDevicesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevices
-		println("Paginate")
+		
 		getOrganizationDevicesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesPaginate, organizationID, "", getOrganizationDevicesQueryParams)
 		if err != nil {
@@ -5354,7 +5354,7 @@ func (s *OrganizationsService) GetOrganizationDevicesAvailabilities(organization
 
 	if getOrganizationDevicesAvailabilitiesQueryParams != nil && getOrganizationDevicesAvailabilitiesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesAvailabilities
-		println("Paginate")
+		
 		getOrganizationDevicesAvailabilitiesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesAvailabilitiesPaginate, organizationID, "", getOrganizationDevicesAvailabilitiesQueryParams)
 		if err != nil {
@@ -5426,7 +5426,7 @@ func (s *OrganizationsService) GetOrganizationDevicesAvailabilitiesChangeHistory
 
 	if getOrganizationDevicesAvailabilitiesChangeHistoryQueryParams != nil && getOrganizationDevicesAvailabilitiesChangeHistoryQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesAvailabilitiesChangeHistory
-		println("Paginate")
+		
 		getOrganizationDevicesAvailabilitiesChangeHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesAvailabilitiesChangeHistoryPaginate, organizationID, "", getOrganizationDevicesAvailabilitiesChangeHistoryQueryParams)
 		if err != nil {
@@ -5498,7 +5498,7 @@ func (s *OrganizationsService) GetOrganizationDevicesControllerMigrations(organi
 
 	if getOrganizationDevicesControllerMigrationsQueryParams != nil && getOrganizationDevicesControllerMigrationsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesControllerMigrations
-		println("Paginate")
+		
 		getOrganizationDevicesControllerMigrationsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesControllerMigrationsPaginate, organizationID, "", getOrganizationDevicesControllerMigrationsQueryParams)
 		if err != nil {
@@ -5607,7 +5607,7 @@ func (s *OrganizationsService) GetOrganizationDevicesPowerModulesStatusesByDevic
 
 	if getOrganizationDevicesPowerModulesStatusesByDeviceQueryParams != nil && getOrganizationDevicesPowerModulesStatusesByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesPowerModulesStatusesByDevice
-		println("Paginate")
+		
 		getOrganizationDevicesPowerModulesStatusesByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesPowerModulesStatusesByDevicePaginate, organizationID, "", getOrganizationDevicesPowerModulesStatusesByDeviceQueryParams)
 		if err != nil {
@@ -5679,7 +5679,7 @@ func (s *OrganizationsService) GetOrganizationDevicesProvisioningStatuses(organi
 
 	if getOrganizationDevicesProvisioningStatusesQueryParams != nil && getOrganizationDevicesProvisioningStatusesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesProvisioningStatuses
-		println("Paginate")
+		
 		getOrganizationDevicesProvisioningStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesProvisioningStatusesPaginate, organizationID, "", getOrganizationDevicesProvisioningStatusesQueryParams)
 		if err != nil {
@@ -5751,7 +5751,7 @@ func (s *OrganizationsService) GetOrganizationDevicesStatuses(organizationID str
 
 	if getOrganizationDevicesStatusesQueryParams != nil && getOrganizationDevicesStatusesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesStatuses
-		println("Paginate")
+		
 		getOrganizationDevicesStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesStatusesPaginate, organizationID, "", getOrganizationDevicesStatusesQueryParams)
 		if err != nil {
@@ -5860,7 +5860,7 @@ func (s *OrganizationsService) GetOrganizationDevicesSystemMemoryUsageHistoryByI
 
 	if getOrganizationDevicesSystemMemoryUsageHistoryByIntervalQueryParams != nil && getOrganizationDevicesSystemMemoryUsageHistoryByIntervalQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesSystemMemoryUsageHistoryByInterval
-		println("Paginate")
+		
 		getOrganizationDevicesSystemMemoryUsageHistoryByIntervalQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesSystemMemoryUsageHistoryByIntervalPaginate, organizationID, "", getOrganizationDevicesSystemMemoryUsageHistoryByIntervalQueryParams)
 		if err != nil {
@@ -5932,7 +5932,7 @@ func (s *OrganizationsService) GetOrganizationDevicesUplinksAddressesByDevice(or
 
 	if getOrganizationDevicesUplinksAddressesByDeviceQueryParams != nil && getOrganizationDevicesUplinksAddressesByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationDevicesUplinksAddressesByDevice
-		println("Paginate")
+		
 		getOrganizationDevicesUplinksAddressesByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationDevicesUplinksAddressesByDevicePaginate, organizationID, "", getOrganizationDevicesUplinksAddressesByDeviceQueryParams)
 		if err != nil {
@@ -6145,7 +6145,7 @@ func (s *OrganizationsService) GetOrganizationFirmwareUpgrades(organizationID st
 
 	if getOrganizationFirmwareUpgradesQueryParams != nil && getOrganizationFirmwareUpgradesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationFirmwareUpgrades
-		println("Paginate")
+		
 		getOrganizationFirmwareUpgradesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationFirmwareUpgradesPaginate, organizationID, "", getOrganizationFirmwareUpgradesQueryParams)
 		if err != nil {
@@ -6217,7 +6217,7 @@ func (s *OrganizationsService) GetOrganizationFirmwareUpgradesByDevice(organizat
 
 	if getOrganizationFirmwareUpgradesByDeviceQueryParams != nil && getOrganizationFirmwareUpgradesByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationFirmwareUpgradesByDevice
-		println("Paginate")
+		
 		getOrganizationFirmwareUpgradesByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationFirmwareUpgradesByDevicePaginate, organizationID, "", getOrganizationFirmwareUpgradesByDeviceQueryParams)
 		if err != nil {
@@ -6289,7 +6289,7 @@ func (s *OrganizationsService) GetOrganizationFloorPlansAutoLocateDevices(organi
 
 	if getOrganizationFloorPlansAutoLocateDevicesQueryParams != nil && getOrganizationFloorPlansAutoLocateDevicesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationFloorPlansAutoLocateDevices
-		println("Paginate")
+		
 		getOrganizationFloorPlansAutoLocateDevicesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationFloorPlansAutoLocateDevicesPaginate, organizationID, "", getOrganizationFloorPlansAutoLocateDevicesQueryParams)
 		if err != nil {
@@ -6361,7 +6361,7 @@ func (s *OrganizationsService) GetOrganizationFloorPlansAutoLocateStatuses(organ
 
 	if getOrganizationFloorPlansAutoLocateStatusesQueryParams != nil && getOrganizationFloorPlansAutoLocateStatusesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationFloorPlansAutoLocateStatuses
-		println("Paginate")
+		
 		getOrganizationFloorPlansAutoLocateStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationFloorPlansAutoLocateStatusesPaginate, organizationID, "", getOrganizationFloorPlansAutoLocateStatusesQueryParams)
 		if err != nil {
@@ -6433,7 +6433,7 @@ func (s *OrganizationsService) GetOrganizationIntegrationsXdrNetworks(organizati
 
 	if getOrganizationIntegrationsXdrNetworksQueryParams != nil && getOrganizationIntegrationsXdrNetworksQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationIntegrationsXdrNetworks
-		println("Paginate")
+		
 		getOrganizationIntegrationsXdrNetworksQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationIntegrationsXdrNetworksPaginate, organizationID, "", getOrganizationIntegrationsXdrNetworksQueryParams)
 		if err != nil {
@@ -6505,7 +6505,7 @@ func (s *OrganizationsService) GetOrganizationInventoryDevices(organizationID st
 
 	if getOrganizationInventoryDevicesQueryParams != nil && getOrganizationInventoryDevicesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationInventoryDevices
-		println("Paginate")
+		
 		getOrganizationInventoryDevicesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationInventoryDevicesPaginate, organizationID, "", getOrganizationInventoryDevicesQueryParams)
 		if err != nil {
@@ -6686,7 +6686,7 @@ func (s *OrganizationsService) GetOrganizationInventoryOnboardingCloudMonitoring
 
 	if getOrganizationInventoryOnboardingCloudMonitoringNetworksQueryParams != nil && getOrganizationInventoryOnboardingCloudMonitoringNetworksQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationInventoryOnboardingCloudMonitoringNetworks
-		println("Paginate")
+		
 		getOrganizationInventoryOnboardingCloudMonitoringNetworksQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationInventoryOnboardingCloudMonitoringNetworksPaginate, organizationID, "", getOrganizationInventoryOnboardingCloudMonitoringNetworksQueryParams)
 		if err != nil {
@@ -6758,7 +6758,7 @@ func (s *OrganizationsService) GetOrganizationLicenses(organizationID string, ge
 
 	if getOrganizationLicensesQueryParams != nil && getOrganizationLicensesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationLicenses
-		println("Paginate")
+		
 		getOrganizationLicensesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationLicensesPaginate, organizationID, "", getOrganizationLicensesQueryParams)
 		if err != nil {
@@ -6934,7 +6934,7 @@ func (s *OrganizationsService) GetOrganizationNetworks(organizationID string, ge
 
 	if getOrganizationNetworksQueryParams != nil && getOrganizationNetworksQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationNetworks
-		println("Paginate")
+		
 		getOrganizationNetworksQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationNetworksPaginate, organizationID, "", getOrganizationNetworksQueryParams)
 		if err != nil {
@@ -7043,7 +7043,7 @@ func (s *OrganizationsService) GetOrganizationPolicyObjects(organizationID strin
 
 	if getOrganizationPolicyObjectsQueryParams != nil && getOrganizationPolicyObjectsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationPolicyObjects
-		println("Paginate")
+		
 		getOrganizationPolicyObjectsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationPolicyObjectsPaginate, organizationID, "", getOrganizationPolicyObjectsQueryParams)
 		if err != nil {
@@ -7115,7 +7115,7 @@ func (s *OrganizationsService) GetOrganizationPolicyObjectsGroups(organizationID
 
 	if getOrganizationPolicyObjectsGroupsQueryParams != nil && getOrganizationPolicyObjectsGroupsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationPolicyObjectsGroupsArray
-		println("Paginate")
+		
 		getOrganizationPolicyObjectsGroupsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationPolicyObjectsGroupsPaginate, organizationID, "", getOrganizationPolicyObjectsGroupsQueryParams)
 		if err != nil {
@@ -7796,7 +7796,7 @@ func (s *OrganizationsService) GetOrganizationSummaryTopNetworksByStatus(organiz
 
 	if getOrganizationSummaryTopNetworksByStatusQueryParams != nil && getOrganizationSummaryTopNetworksByStatusQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationSummaryTopNetworksByStatus
-		println("Paginate")
+		
 		getOrganizationSummaryTopNetworksByStatusQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSummaryTopNetworksByStatusPaginate, organizationID, "", getOrganizationSummaryTopNetworksByStatusQueryParams)
 		if err != nil {
@@ -7942,7 +7942,7 @@ func (s *OrganizationsService) GetOrganizationUplinksStatuses(organizationID str
 
 	if getOrganizationUplinksStatusesQueryParams != nil && getOrganizationUplinksStatusesQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationUplinksStatuses
-		println("Paginate")
+		
 		getOrganizationUplinksStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationUplinksStatusesPaginate, organizationID, "", getOrganizationUplinksStatusesQueryParams)
 		if err != nil {
@@ -8087,7 +8087,7 @@ func (s *OrganizationsService) GetOrganizationWebhooksLogs(organizationID string
 
 	if getOrganizationWebhooksLogsQueryParams != nil && getOrganizationWebhooksLogsQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationWebhooksLogs
-		println("Paginate")
+		
 		getOrganizationWebhooksLogsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWebhooksLogsPaginate, organizationID, "", getOrganizationWebhooksLogsQueryParams)
 		if err != nil {

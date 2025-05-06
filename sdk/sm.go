@@ -707,7 +707,7 @@ func (s *SmService) GetNetworkSmDevices(networkID string, getNetworkSmDevicesQue
 
 	if getNetworkSmDevicesQueryParams != nil && getNetworkSmDevicesQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmDevices
-		println("Paginate")
+		
 		getNetworkSmDevicesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmDevicesPaginate, networkID, "", getNetworkSmDevicesQueryParams)
 		if err != nil {
@@ -852,7 +852,7 @@ func (s *SmService) GetNetworkSmDeviceConnectivity(networkID string, deviceID st
 
 	if getNetworkSmDeviceConnectivityQueryParams != nil && getNetworkSmDeviceConnectivityQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmDeviceConnectivity
-		println("Paginate")
+		
 		getNetworkSmDeviceConnectivityQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmDeviceConnectivityPaginate, networkID, deviceID, getNetworkSmDeviceConnectivityQueryParams)
 		if err != nil {
@@ -926,7 +926,7 @@ func (s *SmService) GetNetworkSmDeviceDesktopLogs(networkID string, deviceID str
 
 	if getNetworkSmDeviceDesktopLogsQueryParams != nil && getNetworkSmDeviceDesktopLogsQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmDeviceDesktopLogs
-		println("Paginate")
+		
 		getNetworkSmDeviceDesktopLogsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmDeviceDesktopLogsPaginate, networkID, deviceID, getNetworkSmDeviceDesktopLogsQueryParams)
 		if err != nil {
@@ -1000,7 +1000,7 @@ func (s *SmService) GetNetworkSmDeviceDeviceCommandLogs(networkID string, device
 
 	if getNetworkSmDeviceDeviceCommandLogsQueryParams != nil && getNetworkSmDeviceDeviceCommandLogsQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmDeviceDeviceCommandLogs
-		println("Paginate")
+		
 		getNetworkSmDeviceDeviceCommandLogsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmDeviceDeviceCommandLogsPaginate, networkID, deviceID, getNetworkSmDeviceDeviceCommandLogsQueryParams)
 		if err != nil {
@@ -1146,7 +1146,7 @@ func (s *SmService) GetNetworkSmDevicePerformanceHistory(networkID string, devic
 
 	if getNetworkSmDevicePerformanceHistoryQueryParams != nil && getNetworkSmDevicePerformanceHistoryQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmDevicePerformanceHistory
-		println("Paginate")
+		
 		getNetworkSmDevicePerformanceHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmDevicePerformanceHistoryPaginate, networkID, deviceID, getNetworkSmDevicePerformanceHistoryQueryParams)
 		if err != nil {
@@ -1476,7 +1476,7 @@ func (s *SmService) GetNetworkSmTrustedAccessConfigs(networkID string, getNetwor
 
 	if getNetworkSmTrustedAccessConfigsQueryParams != nil && getNetworkSmTrustedAccessConfigsQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmTrustedAccessConfigs
-		println("Paginate")
+		
 		getNetworkSmTrustedAccessConfigsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmTrustedAccessConfigsPaginate, networkID, "", getNetworkSmTrustedAccessConfigsQueryParams)
 		if err != nil {
@@ -1548,7 +1548,7 @@ func (s *SmService) GetNetworkSmUserAccessDevices(networkID string, getNetworkSm
 
 	if getNetworkSmUserAccessDevicesQueryParams != nil && getNetworkSmUserAccessDevicesQueryParams.PerPage == -1 {
 		var result *ResponseSmGetNetworkSmUserAccessDevices
-		println("Paginate")
+		
 		getNetworkSmUserAccessDevicesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSmUserAccessDevicesPaginate, networkID, "", getNetworkSmUserAccessDevicesQueryParams)
 		if err != nil {
@@ -1729,7 +1729,7 @@ func (s *SmService) GetOrganizationSmAdminsRoles(organizationID string, getOrgan
 
 	if getOrganizationSmAdminsRolesQueryParams != nil && getOrganizationSmAdminsRolesQueryParams.PerPage == -1 {
 		var result *ResponseSmGetOrganizationSmAdminsRoles
-		println("Paginate")
+		
 		getOrganizationSmAdminsRolesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSmAdminsRolesPaginate, organizationID, "", getOrganizationSmAdminsRolesQueryParams)
 		if err != nil {
@@ -1871,7 +1871,7 @@ func (s *SmService) GetOrganizationSmSentryPoliciesAssignmentsByNetwork(organiza
 
 	if getOrganizationSmSentryPoliciesAssignmentsByNetworkQueryParams != nil && getOrganizationSmSentryPoliciesAssignmentsByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseSmGetOrganizationSmSentryPoliciesAssignmentsByNetwork
-		println("Paginate")
+		
 		getOrganizationSmSentryPoliciesAssignmentsByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSmSentryPoliciesAssignmentsByNetworkPaginate, organizationID, "", getOrganizationSmSentryPoliciesAssignmentsByNetworkQueryParams)
 		if err != nil {

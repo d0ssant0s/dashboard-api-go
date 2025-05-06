@@ -3398,7 +3398,7 @@ func (s *ApplianceService) GetNetworkApplianceClientSecurityEvents(networkID str
 
 	if getNetworkApplianceClientSecurityEventsQueryParams != nil && getNetworkApplianceClientSecurityEventsQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetNetworkApplianceClientSecurityEvents
-		println("Paginate")
+		
 		getNetworkApplianceClientSecurityEventsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkApplianceClientSecurityEventsPaginate, networkID, clientID, getNetworkApplianceClientSecurityEventsQueryParams)
 		if err != nil {
@@ -4193,7 +4193,7 @@ func (s *ApplianceService) GetNetworkApplianceSecurityEvents(networkID string, g
 
 	if getNetworkApplianceSecurityEventsQueryParams != nil && getNetworkApplianceSecurityEventsQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetNetworkApplianceSecurityEvents
-		println("Paginate")
+		
 		getNetworkApplianceSecurityEventsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkApplianceSecurityEventsPaginate, networkID, "", getNetworkApplianceSecurityEventsQueryParams)
 		if err != nil {
@@ -5175,7 +5175,7 @@ func (s *ApplianceService) GetOrganizationApplianceFirewallMulticastForwardingBy
 
 	if getOrganizationApplianceFirewallMulticastForwardingByNetworkQueryParams != nil && getOrganizationApplianceFirewallMulticastForwardingByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetOrganizationApplianceFirewallMulticastForwardingByNetwork
-		println("Paginate")
+		
 		getOrganizationApplianceFirewallMulticastForwardingByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationApplianceFirewallMulticastForwardingByNetworkPaginate, organizationID, "", getOrganizationApplianceFirewallMulticastForwardingByNetworkQueryParams)
 		if err != nil {
@@ -5247,7 +5247,7 @@ func (s *ApplianceService) GetOrganizationApplianceSecurityEvents(organizationID
 
 	if getOrganizationApplianceSecurityEventsQueryParams != nil && getOrganizationApplianceSecurityEventsQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetOrganizationApplianceSecurityEvents
-		println("Paginate")
+		
 		getOrganizationApplianceSecurityEventsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationApplianceSecurityEventsPaginate, organizationID, "", getOrganizationApplianceSecurityEventsQueryParams)
 		if err != nil {
@@ -5353,7 +5353,7 @@ func (s *ApplianceService) GetOrganizationApplianceTrafficShapingVpnExclusionsBy
 
 	if getOrganizationApplianceTrafficShapingVpnExclusionsByNetworkQueryParams != nil && getOrganizationApplianceTrafficShapingVpnExclusionsByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetOrganizationApplianceTrafficShapingVpnExclusionsByNetwork
-		println("Paginate")
+		
 		getOrganizationApplianceTrafficShapingVpnExclusionsByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationApplianceTrafficShapingVpnExclusionsByNetworkPaginate, organizationID, "", getOrganizationApplianceTrafficShapingVpnExclusionsByNetworkQueryParams)
 		if err != nil {
@@ -5425,7 +5425,7 @@ func (s *ApplianceService) GetOrganizationApplianceUplinkStatuses(organizationID
 
 	if getOrganizationApplianceUplinkStatusesQueryParams != nil && getOrganizationApplianceUplinkStatusesQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetOrganizationApplianceUplinkStatuses
-		println("Paginate")
+		
 		getOrganizationApplianceUplinkStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationApplianceUplinkStatusesPaginate, organizationID, "", getOrganizationApplianceUplinkStatusesQueryParams)
 		if err != nil {
@@ -5568,7 +5568,7 @@ func (s *ApplianceService) GetOrganizationApplianceVpnStats(organizationID strin
 
 	if getOrganizationApplianceVpnStatsQueryParams != nil && getOrganizationApplianceVpnStatsQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetOrganizationApplianceVpnStats
-		println("Paginate")
+		
 		getOrganizationApplianceVpnStatsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationApplianceVpnStatsPaginate, organizationID, "", getOrganizationApplianceVpnStatsQueryParams)
 		if err != nil {
@@ -5640,7 +5640,7 @@ func (s *ApplianceService) GetOrganizationApplianceVpnStatuses(organizationID st
 
 	if getOrganizationApplianceVpnStatusesQueryParams != nil && getOrganizationApplianceVpnStatusesQueryParams.PerPage == -1 {
 		var result *ResponseApplianceGetOrganizationApplianceVpnStatuses
-		println("Paginate")
+		
 		getOrganizationApplianceVpnStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationApplianceVpnStatusesPaginate, organizationID, "", getOrganizationApplianceVpnStatusesQueryParams)
 		if err != nil {

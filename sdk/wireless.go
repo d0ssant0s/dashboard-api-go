@@ -4625,7 +4625,7 @@ func (s *WirelessService) GetNetworkWirelessClientConnectivityEvents(networkID s
 
 	if getNetworkWirelessClientConnectivityEventsQueryParams != nil && getNetworkWirelessClientConnectivityEventsQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetNetworkWirelessClientConnectivityEvents
-		println("Paginate")
+		
 		getNetworkWirelessClientConnectivityEventsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkWirelessClientConnectivityEventsPaginate, networkID, clientID, getNetworkWirelessClientConnectivityEventsQueryParams)
 		if err != nil {
@@ -5173,7 +5173,7 @@ func (s *WirelessService) GetNetworkWirelessMeshStatuses(networkID string, getNe
 
 	if getNetworkWirelessMeshStatusesQueryParams != nil && getNetworkWirelessMeshStatusesQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetNetworkWirelessMeshStatuses
-		println("Paginate")
+		
 		getNetworkWirelessMeshStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkWirelessMeshStatusesPaginate, networkID, "", getNetworkWirelessMeshStatusesQueryParams)
 		if err != nil {
@@ -5930,7 +5930,7 @@ func (s *WirelessService) GetOrganizationWirelessAirMarshalRules(organizationID 
 
 	if getOrganizationWirelessAirMarshalRulesQueryParams != nil && getOrganizationWirelessAirMarshalRulesQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessAirMarshalRules
-		println("Paginate")
+		
 		getOrganizationWirelessAirMarshalRulesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessAirMarshalRulesPaginate, organizationID, "", getOrganizationWirelessAirMarshalRulesQueryParams)
 		if err != nil {
@@ -6002,7 +6002,7 @@ func (s *WirelessService) GetOrganizationWirelessAirMarshalSettingsByNetwork(org
 
 	if getOrganizationWirelessAirMarshalSettingsByNetworkQueryParams != nil && getOrganizationWirelessAirMarshalSettingsByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessAirMarshalSettingsByNetwork
-		println("Paginate")
+		
 		getOrganizationWirelessAirMarshalSettingsByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessAirMarshalSettingsByNetworkPaginate, organizationID, "", getOrganizationWirelessAirMarshalSettingsByNetworkQueryParams)
 		if err != nil {
@@ -6074,7 +6074,7 @@ func (s *WirelessService) GetOrganizationWirelessClientsOverviewByDevice(organiz
 
 	if getOrganizationWirelessClientsOverviewByDeviceQueryParams != nil && getOrganizationWirelessClientsOverviewByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessClientsOverviewByDevice
-		println("Paginate")
+		
 		getOrganizationWirelessClientsOverviewByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessClientsOverviewByDevicePaginate, organizationID, "", getOrganizationWirelessClientsOverviewByDeviceQueryParams)
 		if err != nil {
@@ -6146,7 +6146,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesChannelUtilizationByDevi
 
 	if getOrganizationWirelessDevicesChannelUtilizationByDeviceQueryParams != nil && getOrganizationWirelessDevicesChannelUtilizationByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesChannelUtilizationByDevice
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesChannelUtilizationByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesChannelUtilizationByDevicePaginate, organizationID, "", getOrganizationWirelessDevicesChannelUtilizationByDeviceQueryParams)
 		if err != nil {
@@ -6218,7 +6218,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesChannelUtilizationByNetw
 
 	if getOrganizationWirelessDevicesChannelUtilizationByNetworkQueryParams != nil && getOrganizationWirelessDevicesChannelUtilizationByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesChannelUtilizationByNetwork
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesChannelUtilizationByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesChannelUtilizationByNetworkPaginate, organizationID, "", getOrganizationWirelessDevicesChannelUtilizationByNetworkQueryParams)
 		if err != nil {
@@ -6290,7 +6290,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesChannelUtilizationHistor
 
 	if getOrganizationWirelessDevicesChannelUtilizationHistoryByDeviceByIntervalQueryParams != nil && getOrganizationWirelessDevicesChannelUtilizationHistoryByDeviceByIntervalQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesChannelUtilizationHistoryByDeviceByInterval
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesChannelUtilizationHistoryByDeviceByIntervalQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesChannelUtilizationHistoryByDeviceByIntervalPaginate, organizationID, "", getOrganizationWirelessDevicesChannelUtilizationHistoryByDeviceByIntervalQueryParams)
 		if err != nil {
@@ -6362,7 +6362,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesChannelUtilizationHistor
 
 	if getOrganizationWirelessDevicesChannelUtilizationHistoryByNetworkByIntervalQueryParams != nil && getOrganizationWirelessDevicesChannelUtilizationHistoryByNetworkByIntervalQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesChannelUtilizationHistoryByNetworkByInterval
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesChannelUtilizationHistoryByNetworkByIntervalQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesChannelUtilizationHistoryByNetworkByIntervalPaginate, organizationID, "", getOrganizationWirelessDevicesChannelUtilizationHistoryByNetworkByIntervalQueryParams)
 		if err != nil {
@@ -6434,7 +6434,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesEthernetStatuses(organiz
 
 	if getOrganizationWirelessDevicesEthernetStatusesQueryParams != nil && getOrganizationWirelessDevicesEthernetStatusesQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesEthernetStatuses
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesEthernetStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesEthernetStatusesPaginate, organizationID, "", getOrganizationWirelessDevicesEthernetStatusesQueryParams)
 		if err != nil {
@@ -6506,7 +6506,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesPacketLossByClient(organ
 
 	if getOrganizationWirelessDevicesPacketLossByClientQueryParams != nil && getOrganizationWirelessDevicesPacketLossByClientQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesPacketLossByClient
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesPacketLossByClientQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesPacketLossByClientPaginate, organizationID, "", getOrganizationWirelessDevicesPacketLossByClientQueryParams)
 		if err != nil {
@@ -6578,7 +6578,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesPacketLossByDevice(organ
 
 	if getOrganizationWirelessDevicesPacketLossByDeviceQueryParams != nil && getOrganizationWirelessDevicesPacketLossByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesPacketLossByDevice
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesPacketLossByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesPacketLossByDevicePaginate, organizationID, "", getOrganizationWirelessDevicesPacketLossByDeviceQueryParams)
 		if err != nil {
@@ -6650,7 +6650,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesPacketLossByNetwork(orga
 
 	if getOrganizationWirelessDevicesPacketLossByNetworkQueryParams != nil && getOrganizationWirelessDevicesPacketLossByNetworkQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesPacketLossByNetwork
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesPacketLossByNetworkQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesPacketLossByNetworkPaginate, organizationID, "", getOrganizationWirelessDevicesPacketLossByNetworkQueryParams)
 		if err != nil {
@@ -6722,7 +6722,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesPowerModeHistory(organiz
 
 	if getOrganizationWirelessDevicesPowerModeHistoryQueryParams != nil && getOrganizationWirelessDevicesPowerModeHistoryQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesPowerModeHistory
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesPowerModeHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesPowerModeHistoryPaginate, organizationID, "", getOrganizationWirelessDevicesPowerModeHistoryQueryParams)
 		if err != nil {
@@ -6794,7 +6794,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesSystemCPULoadHistory(org
 
 	if getOrganizationWirelessDevicesSystemCpuLoadHistoryQueryParams != nil && getOrganizationWirelessDevicesSystemCpuLoadHistoryQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesSystemCPULoadHistory
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesSystemCpuLoadHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesSystemCPULoadHistoryPaginate, organizationID, "", getOrganizationWirelessDevicesSystemCpuLoadHistoryQueryParams)
 		if err != nil {
@@ -6866,7 +6866,7 @@ func (s *WirelessService) GetOrganizationWirelessDevicesWirelessControllersByDev
 
 	if getOrganizationWirelessDevicesWirelessControllersByDeviceQueryParams != nil && getOrganizationWirelessDevicesWirelessControllersByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessDevicesWirelessControllersByDevice
-		println("Paginate")
+		
 		getOrganizationWirelessDevicesWirelessControllersByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessDevicesWirelessControllersByDevicePaginate, organizationID, "", getOrganizationWirelessDevicesWirelessControllersByDeviceQueryParams)
 		if err != nil {
@@ -6938,7 +6938,7 @@ func (s *WirelessService) GetOrganizationWirelessRfProfilesAssignmentsByDevice(o
 
 	if getOrganizationWirelessRfProfilesAssignmentsByDeviceQueryParams != nil && getOrganizationWirelessRfProfilesAssignmentsByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessRfProfilesAssignmentsByDevice
-		println("Paginate")
+		
 		getOrganizationWirelessRfProfilesAssignmentsByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessRfProfilesAssignmentsByDevicePaginate, organizationID, "", getOrganizationWirelessRfProfilesAssignmentsByDeviceQueryParams)
 		if err != nil {
@@ -7010,7 +7010,7 @@ func (s *WirelessService) GetOrganizationWirelessSSIDsFirewallIsolationAllowlist
 
 	if getOrganizationWirelessSsidsFirewallIsolationAllowlistEntriesQueryParams != nil && getOrganizationWirelessSsidsFirewallIsolationAllowlistEntriesQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessSSIDsFirewallIsolationAllowlistEntries
-		println("Paginate")
+		
 		getOrganizationWirelessSsidsFirewallIsolationAllowlistEntriesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessSSIDsFirewallIsolationAllowlistEntriesPaginate, organizationID, "", getOrganizationWirelessSsidsFirewallIsolationAllowlistEntriesQueryParams)
 		if err != nil {
@@ -7082,7 +7082,7 @@ func (s *WirelessService) GetOrganizationWirelessSSIDsStatusesByDevice(organizat
 
 	if getOrganizationWirelessSsidsStatusesByDeviceQueryParams != nil && getOrganizationWirelessSsidsStatusesByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseWirelessGetOrganizationWirelessSSIDsStatusesByDevice
-		println("Paginate")
+		
 		getOrganizationWirelessSsidsStatusesByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationWirelessSSIDsStatusesByDevicePaginate, organizationID, "", getOrganizationWirelessSsidsStatusesByDeviceQueryParams)
 		if err != nil {

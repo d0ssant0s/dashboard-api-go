@@ -4485,7 +4485,7 @@ func (s *NetworksService) GetNetworkAlertsHistory(networkID string, getNetworkAl
 
 	if getNetworkAlertsHistoryQueryParams != nil && getNetworkAlertsHistoryQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkAlertsHistory
-		println("Paginate")
+		
 		getNetworkAlertsHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkAlertsHistoryPaginate, networkID, "", getNetworkAlertsHistoryQueryParams)
 		if err != nil {
@@ -4591,7 +4591,7 @@ func (s *NetworksService) GetNetworkBluetoothClients(networkID string, getNetwor
 
 	if getNetworkBluetoothClientsQueryParams != nil && getNetworkBluetoothClientsQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkBluetoothClients
-		println("Paginate")
+		
 		getNetworkBluetoothClientsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkBluetoothClientsPaginate, networkID, "", getNetworkBluetoothClientsQueryParams)
 		if err != nil {
@@ -4702,7 +4702,7 @@ func (s *NetworksService) GetNetworkClients(networkID string, getNetworkClientsQ
 
 	if getNetworkClientsQueryParams != nil && getNetworkClientsQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkClients
-		println("Paginate")
+		
 		getNetworkClientsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkClientsPaginate, networkID, "", getNetworkClientsQueryParams)
 		if err != nil {
@@ -4774,7 +4774,7 @@ func (s *NetworksService) GetNetworkClientsApplicationUsage(networkID string, ge
 
 	if getNetworkClientsApplicationUsageQueryParams != nil && getNetworkClientsApplicationUsageQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkClientsApplicationUsage
-		println("Paginate")
+		
 		getNetworkClientsApplicationUsageQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkClientsApplicationUsagePaginate, networkID, "", getNetworkClientsApplicationUsageQueryParams)
 		if err != nil {
@@ -4846,7 +4846,7 @@ func (s *NetworksService) GetNetworkClientsBandwidthUsageHistory(networkID strin
 
 	if getNetworkClientsBandwidthUsageHistoryQueryParams != nil && getNetworkClientsBandwidthUsageHistoryQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkClientsBandwidthUsageHistory
-		println("Paginate")
+		
 		getNetworkClientsBandwidthUsageHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkClientsBandwidthUsageHistoryPaginate, networkID, "", getNetworkClientsBandwidthUsageHistoryQueryParams)
 		if err != nil {
@@ -4955,7 +4955,7 @@ func (s *NetworksService) GetNetworkClientsUsageHistories(networkID string, getN
 
 	if getNetworkClientsUsageHistoriesQueryParams != nil && getNetworkClientsUsageHistoriesQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkClientsUsageHistories
-		println("Paginate")
+		
 		getNetworkClientsUsageHistoriesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkClientsUsageHistoriesPaginate, networkID, "", getNetworkClientsUsageHistoriesQueryParams)
 		if err != nil {
@@ -5136,7 +5136,7 @@ func (s *NetworksService) GetNetworkClientTrafficHistory(networkID string, clien
 
 	if getNetworkClientTrafficHistoryQueryParams != nil && getNetworkClientTrafficHistoryQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkClientTrafficHistory
-		println("Paginate")
+		
 		getNetworkClientTrafficHistoryQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkClientTrafficHistoryPaginate, networkID, clientID, getNetworkClientTrafficHistoryQueryParams)
 		if err != nil {
@@ -5279,7 +5279,7 @@ func (s *NetworksService) GetNetworkEvents(networkID string, getNetworkEventsQue
 
 	if getNetworkEventsQueryParams != nil && getNetworkEventsQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkEvents
-		println("Paginate")
+		
 		getNetworkEventsQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkEventsPaginate, networkID, "", getNetworkEventsQueryParams)
 		if err != nil {
@@ -5905,7 +5905,7 @@ func (s *NetworksService) GetNetworkNetworkHealthChannelUtilization(networkID st
 
 	if getNetworkNetworkHealthChannelUtilizationQueryParams != nil && getNetworkNetworkHealthChannelUtilizationQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkNetworkHealthChannelUtilization
-		println("Paginate")
+		
 		getNetworkNetworkHealthChannelUtilizationQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkNetworkHealthChannelUtilizationPaginate, networkID, "", getNetworkNetworkHealthChannelUtilizationQueryParams)
 		if err != nil {
@@ -6188,7 +6188,7 @@ func (s *NetworksService) GetNetworkPoliciesByClient(networkID string, getNetwor
 
 	if getNetworkPoliciesByClientQueryParams != nil && getNetworkPoliciesByClientQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkPoliciesByClient
-		println("Paginate")
+		
 		getNetworkPoliciesByClientQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkPoliciesByClientPaginate, networkID, "", getNetworkPoliciesByClientQueryParams)
 		if err != nil {
@@ -6606,7 +6606,7 @@ func (s *NetworksService) GetNetworkVLANProfilesAssignmentsByDevice(networkID st
 
 	if getNetworkVlanProfilesAssignmentsByDeviceQueryParams != nil && getNetworkVlanProfilesAssignmentsByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseNetworksGetNetworkVLANProfilesAssignmentsByDevice
-		println("Paginate")
+		
 		getNetworkVlanProfilesAssignmentsByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkVLANProfilesAssignmentsByDevicePaginate, networkID, "", getNetworkVlanProfilesAssignmentsByDeviceQueryParams)
 		if err != nil {
@@ -6927,7 +6927,7 @@ func (s *NetworksService) GetOrganizationSummaryTopNetworksByStatus(organization
 
 	if getOrganizationSummaryTopNetworksByStatusQueryParams != nil && getOrganizationSummaryTopNetworksByStatusQueryParams.PerPage == -1 {
 		var result *ResponseOrganizationsGetOrganizationSummaryTopNetworksByStatus
-		println("Paginate")
+		
 		getOrganizationSummaryTopNetworksByStatusQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSummaryTopNetworksByStatusPaginate, organizationID, "", getOrganizationSummaryTopNetworksByStatusQueryParams)
 		if err != nil {

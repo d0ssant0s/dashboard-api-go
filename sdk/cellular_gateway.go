@@ -885,7 +885,7 @@ func (s *CellularGatewayService) GetOrganizationCellularGatewayUplinkStatuses(or
 
 	if getOrganizationCellularGatewayUplinkStatusesQueryParams != nil && getOrganizationCellularGatewayUplinkStatusesQueryParams.PerPage == -1 {
 		var result *ResponseCellularGatewayGetOrganizationCellularGatewayUplinkStatuses
-		println("Paginate")
+		
 		getOrganizationCellularGatewayUplinkStatusesQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationCellularGatewayUplinkStatusesPaginate, organizationID, "", getOrganizationCellularGatewayUplinkStatusesQueryParams)
 		if err != nil {

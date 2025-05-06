@@ -3423,7 +3423,7 @@ func (s *SwitchService) GetNetworkSwitchDhcpV4ServersSeen(networkID string, getN
 
 	if getNetworkSwitchDhcpV4ServersSeenQueryParams != nil && getNetworkSwitchDhcpV4ServersSeenQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetNetworkSwitchDhcpV4ServersSeen
-		println("Paginate")
+		
 		getNetworkSwitchDhcpV4ServersSeenQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSwitchDhcpV4ServersSeenPaginate, networkID, "", getNetworkSwitchDhcpV4ServersSeenQueryParams)
 		if err != nil {
@@ -3529,7 +3529,7 @@ func (s *SwitchService) GetNetworkSwitchDhcpServerPolicyArpInspectionTrustedServ
 
 	if getNetworkSwitchDhcpServerPolicyArpInspectionTrustedServersQueryParams != nil && getNetworkSwitchDhcpServerPolicyArpInspectionTrustedServersQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetNetworkSwitchDhcpServerPolicyArpInspectionTrustedServers
-		println("Paginate")
+		
 		getNetworkSwitchDhcpServerPolicyArpInspectionTrustedServersQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSwitchDhcpServerPolicyArpInspectionTrustedServersPaginate, networkID, "", getNetworkSwitchDhcpServerPolicyArpInspectionTrustedServersQueryParams)
 		if err != nil {
@@ -3601,7 +3601,7 @@ func (s *SwitchService) GetNetworkSwitchDhcpServerPolicyArpInspectionWarningsByD
 
 	if getNetworkSwitchDhcpServerPolicyArpInspectionWarningsByDeviceQueryParams != nil && getNetworkSwitchDhcpServerPolicyArpInspectionWarningsByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetNetworkSwitchDhcpServerPolicyArpInspectionWarningsByDevice
-		println("Paginate")
+		
 		getNetworkSwitchDhcpServerPolicyArpInspectionWarningsByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetNetworkSwitchDhcpServerPolicyArpInspectionWarningsByDevicePaginate, networkID, "", getNetworkSwitchDhcpServerPolicyArpInspectionWarningsByDeviceQueryParams)
 		if err != nil {
@@ -4563,7 +4563,7 @@ func (s *SwitchService) GetOrganizationSwitchPortsBySwitch(organizationID string
 
 	if getOrganizationSwitchPortsBySwitchQueryParams != nil && getOrganizationSwitchPortsBySwitchQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetOrganizationSwitchPortsBySwitch
-		println("Paginate")
+		
 		getOrganizationSwitchPortsBySwitchQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSwitchPortsBySwitchPaginate, organizationID, "", getOrganizationSwitchPortsBySwitchQueryParams)
 		if err != nil {
@@ -4635,7 +4635,7 @@ func (s *SwitchService) GetOrganizationSwitchPortsClientsOverviewByDevice(organi
 
 	if getOrganizationSwitchPortsClientsOverviewByDeviceQueryParams != nil && getOrganizationSwitchPortsClientsOverviewByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetOrganizationSwitchPortsClientsOverviewByDevice
-		println("Paginate")
+		
 		getOrganizationSwitchPortsClientsOverviewByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSwitchPortsClientsOverviewByDevicePaginate, organizationID, "", getOrganizationSwitchPortsClientsOverviewByDeviceQueryParams)
 		if err != nil {
@@ -4744,7 +4744,7 @@ func (s *SwitchService) GetOrganizationSwitchPortsStatusesBySwitch(organizationI
 
 	if getOrganizationSwitchPortsStatusesBySwitchQueryParams != nil && getOrganizationSwitchPortsStatusesBySwitchQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetOrganizationSwitchPortsStatusesBySwitch
-		println("Paginate")
+		
 		getOrganizationSwitchPortsStatusesBySwitchQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSwitchPortsStatusesBySwitchPaginate, organizationID, "", getOrganizationSwitchPortsStatusesBySwitchQueryParams)
 		if err != nil {
@@ -4816,7 +4816,7 @@ func (s *SwitchService) GetOrganizationSwitchPortsTopologyDiscoveryByDevice(orga
 
 	if getOrganizationSwitchPortsTopologyDiscoveryByDeviceQueryParams != nil && getOrganizationSwitchPortsTopologyDiscoveryByDeviceQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetOrganizationSwitchPortsTopologyDiscoveryByDevice
-		println("Paginate")
+		
 		getOrganizationSwitchPortsTopologyDiscoveryByDeviceQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSwitchPortsTopologyDiscoveryByDevicePaginate, organizationID, "", getOrganizationSwitchPortsTopologyDiscoveryByDeviceQueryParams)
 		if err != nil {
@@ -4888,7 +4888,7 @@ func (s *SwitchService) GetOrganizationSwitchPortsUsageHistoryByDeviceByInterval
 
 	if getOrganizationSwitchPortsUsageHistoryByDeviceByIntervalQueryParams != nil && getOrganizationSwitchPortsUsageHistoryByDeviceByIntervalQueryParams.PerPage == -1 {
 		var result *ResponseSwitchGetOrganizationSwitchPortsUsageHistoryByDeviceByInterval
-		println("Paginate")
+		
 		getOrganizationSwitchPortsUsageHistoryByDeviceByIntervalQueryParams.PerPage = PAGINATION_PER_PAGE
 		result2, response, err := Paginate(s.GetOrganizationSwitchPortsUsageHistoryByDeviceByIntervalPaginate, organizationID, "", getOrganizationSwitchPortsUsageHistoryByDeviceByIntervalQueryParams)
 		if err != nil {
